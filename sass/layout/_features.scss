@@ -1,0 +1,38 @@
+.features {
+ display: flex;
+ flex-wrap: wrap;
+ 
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  &__title {
+    color: $title-text-color;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+  }
+
+
+
+  &__wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+} 
